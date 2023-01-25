@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">Data Saver</string>
+    <string name="label">Used today</string>
+    <string name="label2">Used this month</string>
+    <string name="item1">Settings</string>
+    <string name="item2">Rate Us</string>
+    <string name="item3">Share App</string>
+    <string name="item4">Refresh</string>
+    <string name="dubutton">Data Used</string>
+    <string name="okbutton">OK</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pl_title">Enable Password Lock</string>
+    <string name="pl_summary">Turn on password lock to prevent accidentally turning off internet lock widget.</string>
+    <string name="password_text">Password</string>
+
+    <string name="autoLock_title">Lock Frequency</string>
+    <string name="autoLock_summary">Automatically turns on Data Saver lock widget when device stays idle.</string>
+    <string-array name="autoLock_list">
+        <item>5 minute</item>
+        <item>10 minute</item>
+        <item>20 minute</item>
+        <item>30 minute</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="autoLock_list_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>Never</item>
+    </string-array>
+    <string name="monthStartDay_text">Month Start Day</string>
+    <!-- settings for mobile data -->
+    <string name="pref_header_mobiledata">Mobile Data Limit Settings</string>
+
+    <string name="mobileswitch_title">Enable Mobile Data Limit</string>
+    <string name="mobileswitch_summary">Sets data limit for each day</string>
+
+    <string name="mobilelist_title">Byte Format</string>
+    <string-array name="mobile_list">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="mobile_list_values">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+
+    <string name="mobiletext_title">Limit in MB</string>
+    <string name="mobiletext_summary">1 GB equals 1024 MB</string>
+
+
+    <!-- settings for Notifications -->
+    <string name="pref_header_notification">Notifications</string>
+
+    <string name="pref_title_limitover_notifications">Exceeded limit notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- settings for wifi -->
+    <string name="pref_header_wifi">Wifi Limit Settings</string>
+
+    <string name="wifiswitch_title">Enable Wifi Limit</string>
+    <string name="wifiswitch_summary">Sets data limit for each day</string>
+
+    <string name="wifilist_title">Byte Format</string>
+    <string-array name="wifi_list">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="wifi_list_values">
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+
+    <string name="wifitext_title">Limit in MB</string>
+    <string name="wifitext_summary">1 GB equals 1024 MB</string>
+
+    <!-- settings for time -->
+    <string name="pref_header_time">Time Limit Settings</string>
+
+    <string name="timeswitch_title">Enable Time Limit</string>
+    <string name="timeswitch_summary">Sets daily time limit for using internet</string>
+
+    <string name="timelist_title">Time Limit</string>
+    <string-array name="time_list">
+        <item>15 minute</item>
+        <item>30 minute</item>
+        <item>60 minute</item>
+        <item>90 minute</item>
+    </string-array>
+    <string-array name="time_list_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>90</item>
+    </string-array>
+
+    <string name="time_summary">If the time limit is set along with data limit, then lock will be activated based on which of the two limits reach first.</string>
+    <!-- settings for notificationlayout -->
+    <string name="notification_text1">  Internet Lock</string>
+    <string name="notification_text2">Lock Off</string>
+
+    <string name="new_message_notification_title_template">New message: %1$s</string>
+
+
+</resources>

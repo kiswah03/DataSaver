@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="general_preference">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <PreferenceCategory android:title="Set Password">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="password_switch"
+            android:summary="@string/pl_summary"
+            android:title="@string/pl_title" />
+        <EditTextPreference
+                android:dependency="password_switch"
+                android:inputType="textPassword"
+                android:key="password_text"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/password_text" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Set Start Day of a Month">
+        <EditTextPreference
+            android:defaultValue="1"
+            android:key="mnthStart_text"
+            android:inputType="number"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/monthStartDay_text"
+            android:summary="1st of every month"/>
+    </PreferenceCategory>
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <PreferenceCategory android:title="Auto Lock">
+        <ListPreference
+            android:defaultValue="Never"
+            android:entries="@array/autoLock_list"
+            android:entryValues="@array/autoLock_list_values"
+            android:key="autoLock_list"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/autoLock_title" />
+        <Preference
+            android:key="pref_static_field_key4"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="@string/autoLock_summary"
+            android:title="" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

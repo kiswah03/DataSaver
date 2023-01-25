@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:key="wifi_preference">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="wifi_switch"
+        android:summary="@string/wifiswitch_summary"
+        android:title="@string/wifiswitch_title" />
+    <ListPreference
+        android:dependency="wifi_switch"
+        android:defaultValue="MB"
+        android:entries="@array/wifi_list"
+        android:entryValues="@array/wifi_list_values"
+        android:key="wifi_list"
+        android:title="@string/wifilist_title"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"/>
+    <EditTextPreference
+        android:defaultValue="0"
+        android:dependency="wifi_switch"
+        android:inputType="number"
+        android:key="wifi_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/wifitext_title" />
+    <Preference
+        android:key="pref_static_field_key2"
+        android:persistent="false"
+        android:selectable="false"
+        android:summary="@string/wifitext_summary"
+        android:title="" />
+
+</PreferenceScreen>
